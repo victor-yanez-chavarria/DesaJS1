@@ -1,0 +1,109 @@
+/* -------- Estilos Generales -------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form,
+.result {
+  width: 25rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+p {
+  width: 100%;
+  text-align: justify;
+}
+
+img {
+  width: 90%;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: orange;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+button:hover {
+  background-color: #9f9f9f;
+  color: #000;
+}
+
+/* -------- Formulario -------- */
+
+.form {
+  background-color: #7ba238;
+  color: #fff;
+}
+
+.form div {
+  width: 100%;
+}
+
+#precio {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* -------- Estilos Contenedor -------- */
+
+.result {
+  border: 1px solid #349229;
+  font-size: 1.2rem;
+}
+
+.dot {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: bottom;
+  transition: all 0.3s ease-out;
+}
+
+/* -------- Media Queries -------- */
+
+@media screen and (max-width: 992px) {
+  body {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  div {
+    max-width: 21rem;
+  }
+}

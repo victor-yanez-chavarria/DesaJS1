@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/estilos.css" />
+    <title>Desafío 1 - Calculando el total</title>
+  </head>
+
+  <body>
+    <div class="form">
+      <img src="./assets/img/laptop1.avif" alt="Foto Laptop"/>
+      <p class="description">Laptop Gamer AMD</p>
+      <input
+        type="number"
+        name="cantidad"
+        id="cantidad"
+        placeholder="Cantidad"
+      />
+      <input type="text" name="color" id="color" placeholder="Color" />
+      <div>
+        <p class="oferta">
+          <strong>Precio Normal: $</strong><span id="precio">400000</span>
+        </p>
+      </div>
+      <button>Calcular Total</button>
+    </div>
+
+    <div class="result">
+      <p>Total: $<span id="result-total"></span></p>
+      <p>Cantidad: <span id="result-cantidad"></span></p>
+      <p>Color: <span id="result-color" class="dot"></span></p>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
